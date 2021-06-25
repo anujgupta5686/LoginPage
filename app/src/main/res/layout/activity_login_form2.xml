@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+   android:orientation="vertical"
+    tools:context=".Login_Form2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Form"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/inputBackground"
+        android:background="@color/background"
+        android:textAlignment="center"
+        android:gravity="center"
+
+        />
+
+    <!--UserName or Email Id section-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <EditText
+            android:id="@+id/Lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UserName or Email Id"
+            android:inputType="textEmailSubject"
+            android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+            android:textColor="@color/inputBackground"
+            android:textSize="15dp"
+            android:padding="7dp"
+            android:background="@color/background"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+    <!--Password section-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <EditText
+            android:id="@+id/Lpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_baseline_create_24"
+            android:textColor="@color/inputBackground"
+            android:textSize="15dp"
+            android:padding="7dp"
+            android:background="@color/background"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+    <!--Check box for confirmation your information-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <CheckBox
+            android:id="@+id/is_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you have matched then press here"
+            android:checked="true"
+            android:onClick="checkmate"
+            android:textSize="14dp"
+            android:textColor="@color/inputBackground"
+            />
+
+    </LinearLayout>
+    <!--Gender-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:padding="10dp"
+            android:textSize="20dp"
+
+            android:textColor="@color/inputBackground"
+            android:background="@color/background"
+            android:textAlignment="center"
+            android:gravity="center"
+
+            />
+
+    </LinearLayout>
+    <!--Radio button create-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+            <RadioButton
+                android:id="@+id/gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Male "
+                />
+
+            <RadioButton
+                android:id="@+id/gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Female "
+                />
+            <RadioButton
+                android:id="@+id/gender_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Other "
+                android:drawableLeft="@drawable/ic_baseline_clear_24"
+                />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <!--Login Button section-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/Llogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:visibility="invisible"
+
+            />
+
+    </LinearLayout>
+
+    <!--Text field area-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/Loutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
